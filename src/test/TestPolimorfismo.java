@@ -79,7 +79,10 @@ public class TestPolimorfismo {
                         ingresoDatosConsola.metodoDatosConsola();
 
                         array1.añadirDatosProfesoresTitulares(profesorTitular);
+                        //Array.añadirDatosProfesoresTitulares(profesorTitular);
+                        
                         array1.añadirDatosProfesoresSuplentes(profesorSuplente);
+                        //Array.añadirDatosProfesoresSuplentes(profesorSuplente);
 
                         ingresoDatosConsola.metodoRepuestaDatosConsola();
 

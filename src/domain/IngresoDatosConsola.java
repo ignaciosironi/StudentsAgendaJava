@@ -10,29 +10,28 @@ public class IngresoDatosConsola {
     
     ProfesorSuplente profesorSuplente = new ProfesorSuplente();
     
-    private static int respuestaIngresoDatos;
+    private int respuestaIngresoDatos;
     
     public int opcion;
 
     public void metodoDatosConsola() {
 
         System.out.println("Ingrese Nombre profesor titular: ");
-        profesorTitular.nombre = scanner.nextLine();
+        //profesorTitular.nombre = scanner.nextLine();
+        Profesor.nombre = scanner.nextLine();
 
         System.out.println("Ingrese apellido profesor titular: ");
-        profesorTitular.apellido=scanner.nextLine();
-        
+        Profesor.apellido=scanner.nextLine();
         
         System.out.println("Ingrese Nombre profesor suplente: ");
-        profesorSuplente.nombre=scanner.nextLine();
+        ProfesorSuplente.nombre=scanner.nextLine();
         
         System.out.println("Ingrese apellido profesor suplente: ");
-        profesorSuplente.apellido=scanner.nextLine();
-        
+        //profesorSuplente.apellido=scanner.nextLine();
+        ProfesorSuplente.apellido=scanner.nextLine();
         
         System.out.println("Ingrese departamento profesor suplente: ");
-        profesorSuplente.departamento=scanner.nextLine();
-    
+        ProfesorSuplente.departamento=scanner.nextLine();
     }
     
     public void metodoBuscarDatos(){
@@ -58,12 +57,13 @@ public class IngresoDatosConsola {
         System.out.println("Debe ingresar el número 1, 2 o 3");
     }
     
-    public static int getRespuestaIngresoDatos() {
+    public int getRespuestaIngresoDatos() {
         return respuestaIngresoDatos;
     }
-
-    public static void setRespuestaIngresoDatos(int respuestaIngresoDatos) {
-        IngresoDatosConsola.respuestaIngresoDatos = respuestaIngresoDatos;
+    
+    public void setRespuestaIngresoDatos(int respuestaIngresoDatos) {
+        this.respuestaIngresoDatos = respuestaIngresoDatos;
     }
-
+    
+    
 }

@@ -2,26 +2,26 @@ package domain;
 
 public class Profesor {
 
-    protected String nombre;
-    protected String apellido;
+    protected static String nombre;
+    protected static String apellido;
 
     public Profesor (){
         
     }
     
     public void mostrarDatosProfesores() {
-        System.out.println("Datos profeosr titular\n" + "Nombre: " + this.nombre + "\n" + "Apellido: " + this.apellido + "\n");
+        System.out.println("Datos profeosr titular\n" + "Nombre: " + nombre + "\n" + "Apellido: " + apellido + "\n");
     }
 
-    public String getNombre() {
+    public static String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public static void setNombre(String nombre) {
+        nombre = nombre;
     }
 
-    public String getApellido() {
+    public static String getApellido() {
         return apellido;
     }
 

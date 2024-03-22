@@ -2,7 +2,7 @@ package domain;
 
 public class ProfesorSuplente extends Profesor {
 
-    protected String departamento;
+    protected static String departamento;
 
     
     public ProfesorSuplente(){
@@ -15,12 +15,12 @@ public class ProfesorSuplente extends Profesor {
 
     }
     
-    public String getDepartamento() {
+    public static String getDepartamento() {
         return departamento;
     }
 
-    public void setDepartamento(String departamento) {
-        this.departamento = departamento;
+    public static void setDepartamento(String departamento) {
+        departamento = departamento;
     }
 
     
